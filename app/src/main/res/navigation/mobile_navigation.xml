@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.davidoss.dispositivos_it.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.davidoss.dispositivos_it.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.davidoss.dispositivos_it.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_persianas"
+        android:name="com.davidoss.dispositivos_it.PersianasFragment"
+        android:label="@string/menu_persianas"
+        tools:layout="@layout/fragment_persianas" />
+    <fragment
+        android:id="@+id/nav_alarma"
+        android:name="com.davidoss.dispositivos_it.AlarmaFragment"
+        android:label="@string/menu_alarma"
+        tools:layout="@layout/fragment_alarma" />
+    <fragment
+        android:id="@+id/nav_jardin"
+        android:name="com.davidoss.dispositivos_it.JardinFragment"
+        android:label="@string/menu_jardin"
+        tools:layout="@layout/fragment_jardin" />
+
+    <fragment
+        android:id="@+id/nav_falta"
+        android:name="com.davidoss.dispositivos_it.JardinFragment"
+        android:label="@string/menu_falta"
+        tools:layout="@layout/fragment_jardin" />
+
+    <fragment
+        android:id="@+id/nav_dispensador"
+        android:name="com.davidoss.dispositivos_it.DispensadorFragment"
+        android:label="@string/menu_dispensador"
+        tools:layout="@layout/fragment_dispensador" />
+    <fragment
+        android:id="@+id/nav_humo"
+        android:name="com.davidoss.dispositivos_it.HumoFragment"
+        android:label="@string/menu_humo"
+        tools:layout="@layout/fragment_humo" />
+
+    <fragment
+        android:id="@+id/nav_gas"
+        android:name="com.davidoss.dispositivos_it.GasFragment"
+        android:label="@string/menu_gas"
+        tools:layout="@layout/fragment_gas" />
+
+    <fragment
+        android:id="@+id/nav_seguridad"
+        android:name="com.davidoss.dispositivos_it.SeguridadFragment"
+        android:label="@string/menu_Seguridad"
+        tools:layout="@layout/fragment_seguridad" />
+    <fragment
+        android:id="@+id/nav_sisterna"
+        android:name="com.davidoss.dispositivos_it.SisternaFragment"
+        android:label="@string/menu_sisterna"
+        tools:layout="@layout/fragment_sisterna" />
+
+    <fragment
+        android:id="@+id/nav_tinaco"
+        android:name="com.davidoss.dispositivos_it.TinacoFragment"
+        android:label="@string/menu_tinaco"
+        tools:layout="@layout/fragment_tinaco" />
+    <fragment
+        android:id="@+id/nav_luces"
+        android:name="com.davidoss.dispositivos_it.LucesFragment"
+        android:label="@string/menu_luces"
+        tools:layout="@layout/fragment_luces" />
+    <fragment
+        android:id="@+id/nav_consumoluz"
+        android:name="com.davidoss.dispositivos_it.ConsumoluzFragment"
+        android:label="@string/menu_consumoluz"
+        tools:layout="@layout/fragment_consumoluz" />
+</navigation>

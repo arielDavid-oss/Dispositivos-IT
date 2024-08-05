@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_persianas"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_persianas" />
+        <item
+            android:id="@+id/nav_alarma"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_alarma" />
+        <item
+            android:id="@+id/nav_jardin"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_jardin" />
+        <item
+            android:id="@+id/nav_falta"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_falta" />
+        <item
+            android:id="@+id/nav_dispensador"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_dispensador" />
+        <item
+            android:id="@+id/nav_humo"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_humo" />
+        <item
+            android:id="@+id/nav_gas"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_gas" />
+        <item
+            android:id="@+id/nav_seguridad"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_Seguridad" />
+        <item
+            android:id="@+id/nav_sisterna"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_sisterna" />
+        <item
+            android:id="@+id/nav_tinaco"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_tinaco" />
+        <item
+            android:id="@+id/nav_luces"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_luces" />
+        <item
+            android:id="@+id/nav_consumoluz"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_consumoluz" />
+    </group>
+</menu>
