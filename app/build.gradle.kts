@@ -36,6 +36,8 @@ android {
 
 dependencies {
 
+    implementation ("androidx.core:core:1.7.0")
+    implementation ("io.socket:socket.io-client:2.0.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)
