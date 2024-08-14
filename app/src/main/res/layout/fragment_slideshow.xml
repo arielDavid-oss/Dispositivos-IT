@@ -8,15 +8,53 @@
 
     <TextView
         android:id="@+id/text_slideshow"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:textAlignment="center"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/threshold_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/threshold_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Temperatura predeterminada"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/set_threshold_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_slideshow" />
+
+    <Button
+        android:id="@+id/request_temp_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solicitar Temperatura"
+        app:layout_constraintBottom_toTopOf="@+id/threshold_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/threshold_input"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/set_threshold_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Establecer Umbral"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/request_temp_button"
+        app:layout_constraintVertical_bias="0.572" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

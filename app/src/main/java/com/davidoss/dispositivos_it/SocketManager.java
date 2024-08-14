@@ -8,7 +8,7 @@ import io.socket.client.IO;
 import io.socket.client.Socket;
 
 public class SocketManager {
-    private  static  final String SERVER_URL = "https://c10a-2806-105e-15-f90-8424-b3c7-e3d7-402d.ngrok-free.app";
+    private  static  final String SERVER_URL = "https://f652-201-114-106-185.ngrok-free.app";
     private  static Socket mSocket;
 
     private SocketManager() {
