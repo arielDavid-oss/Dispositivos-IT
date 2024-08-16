@@ -3,11 +3,12 @@ package com.davidoss.dispositivos_it;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.app.Service;
 import android.content.Intent;
 import android.os.Build;
-import android.service.notification.NotificationListenerService;
+import android.os.IBinder;
 
-public class NotificationService extends NotificationListenerService {
+public class NotificationService extends Service {
     private static final String CHANNEL_ID = "TimbreChannel";
 
     @Override
@@ -34,7 +35,7 @@ public class NotificationService extends NotificationListenerService {
         Notification notification = new Notification.Builder(this, CHANNEL_ID)
                 .setContentTitle("Notification Service")
                 .setContentText("Service is running")
-                .setSmallIcon(R.drawable.timbre)
+                .setSmallIcon(R.drawable.timbre)  // Asegúrate de tener un icono válido en res/drawable
                 .build();
 
         startForeground(1, notification);
@@ -44,5 +45,11 @@ public class NotificationService extends NotificationListenerService {
     @Override
     public void onDestroy() {
         super.onDestroy();
+    }
+
+    @Override
+    public IBinder onBind(Intent intent) {
+        // This service is not designed to be bound.
+        return null;
     }
 }

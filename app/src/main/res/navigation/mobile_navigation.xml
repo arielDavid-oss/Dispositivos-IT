@@ -33,6 +33,11 @@
         android:label="@string/menu_alarma"
         tools:layout="@layout/fragment_alarma" />
     <fragment
+        android:id="@+id/nav_alarmabebe"
+        android:name="com.davidoss.dispositivos_it.AlarmaFragment"
+        android:label="@string/menu_alarmabebe"
+        tools:layout="@layout/fragment_alarma_bebe" />
+    <fragment
         android:id="@+id/nav_jardin"
         android:name="com.davidoss.dispositivos_it.JardinFragment"
         android:label="@string/menu_jardin"

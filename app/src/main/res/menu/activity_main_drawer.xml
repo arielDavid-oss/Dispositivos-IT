@@ -25,6 +25,10 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_alarma" />
         <item
+            android:id="@+id/nav_alarmabebe"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_alarmabebe" />
+        <item
             android:id="@+id/nav_jardin"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_jardin" />
