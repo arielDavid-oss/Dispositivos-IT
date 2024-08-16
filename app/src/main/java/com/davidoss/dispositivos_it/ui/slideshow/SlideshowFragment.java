@@ -1,11 +1,13 @@
 package com.davidoss.dispositivos_it.ui.slideshow;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.EditText;
 
@@ -22,12 +24,15 @@ public class SlideshowFragment extends Fragment {
 
     private FragmentSlideshowBinding binding;
     private Socket socket;
+    ImageView imageView;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentSlideshowBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+        imageView = root.findViewById(R.id.imageView);
+        imageView.setImageResource(R.drawable.ventilador_off);
         final TextView temperatureTextView = binding.textSlideshow;
         final EditText thresholdInput = binding.thresholdInput;
         Button requestTempButton = binding.requestTempButton;
